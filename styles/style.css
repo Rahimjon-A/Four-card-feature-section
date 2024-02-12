@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --ff-sans: "Poppins", sans-serif;
+  --color-aqua: hsl(180, 62%, 55%);
+  --color-red: hsl(0, 78%, 62%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --paragraph: hsl(229, 6%, 66%);
+}
+
+body {
+  background: hsl(0, 0%, 98%);
+}
+
+p {
+  line-height: 1.7;
+  color: var(--paragraph);
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.wrapper {
+  max-width: 550px;
+  margin-inline: auto;
+}
+
+header {
+  margin-block: 5rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+}
+header h1 span {
+  font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+main .card__holder {
+  --gap: 2rem;
+  display: grid;
+  gap: var(--gap);
+  margin-bottom: 5rem;
+}
+main .card__holder .col {
+  display: grid;
+  gap: var(--gap);
+  align-content: center;
+}
+main .card__holder .col .card {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 1rem 1rem -0.5rem rgb(224, 224, 255);
+  border-radius: 0.5rem;
+  border-top: 6px solid;
+}
+main .card__holder .col .card h2 {
+  margin-block: 0.5rem;
+  color: hsl(234, 12%, 34%);
+}
+main .card__holder .col .card p {
+  display: block;
+  margin-bottom: 2rem;
+}
+main .card__holder .col .card img {
+  display: block;
+  margin-left: auto;
+}
+main .card__holder .col .border-aqua {
+  border-color: var(--color-aqua);
+}
+main .card__holder .col .border-red {
+  border-color: var(--color-red);
+}
+main .card__holder .col .border-blue {
+  border-color: var(--color-blue);
+}
+main .card__holder .col .border-orange {
+  border-color: var(--color-orange);
+}
+main .card__holder > * {
+  flex: 1;
+}
+
+@media (min-width: 800px) {
+  header {
+    margin-block: 5rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.125rem;
+    margin-bottom: 1rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+  }
+  header h1 span {
+    font-size: 2.125rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+  }
+  main .card__holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
